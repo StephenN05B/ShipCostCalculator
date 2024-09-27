@@ -22,28 +22,28 @@ public class Main {
             shipCost = 0;
             totalCost = itemPrice;
 
-             // have to pay ship costs
-                {
-                    shipCost = 0;
-                    totalCost = itemPrice;
+            // have to pay ship costs
 
-                }
-
-                {
-
-                    shipCost = SHIP_RATE * itemPrice;
-                    totalCost = itemPrice + shipCost;
-
-                    {
-                        System.out.println("Shipping costs are: " + shipCost);
-                        System.out.println("Total costs are: " + totalCost);
-                    }
-                    trash = in.nextLine();
-                    System.out.println(trash + " is not a valid number! ");
-                    System.out.println("Run the program again with correct input! ");
-
-                }
-
+                shipCost = 0;
+                totalCost = itemPrice;
 
             }
+
+            {
+
+                shipCost = SHIP_RATE * itemPrice;
+                totalCost = itemPrice + shipCost;
+
+                {
+                    System.out.println("Shipping costs are: " + shipCost);
+                    System.out.println("Total costs are: " + totalCost);
+                }
+                trash = in.nextLine();
+                System.out.println(trash + " is not a valid number! ");
+                System.out.println("Run the program again with correct input! ");
+
+            }
+
+
         }
+    }
